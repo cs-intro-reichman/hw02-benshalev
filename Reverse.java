@@ -12,9 +12,9 @@ public class Reverse {
 			strl = strl- 1; // minus to knoow what is the next one
 		}
 		System.out.println(" ");
-		int x = name.length();		 // chek the num of the muddle char
+		int x = name.length() - 1;		 // chek the num of the muddle char
 		//if (name.length() % 2 == 1 ){
-			System.out.println("The middle character is " + name.charAt(x/2));		 // print the middle char
+			System.out.println("The middle character is " + name.charAt((x)/2));		 // print the middle char
 
 		//}
 		//else{
