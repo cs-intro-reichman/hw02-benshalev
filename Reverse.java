@@ -16,12 +16,5 @@ public class Reverse {
 		//if (name.length() % 2 == 1 ){
 			System.out.println("The middle character is " + name.charAt((x)/2));		 // print the middle char
 
-		//}
-		//else{
-		//	System.out.print("The middle character is " + name.charAt((x/2)+1));
-		//	System.out.println(name.charAt(x/2));
-		//}
-
-		//// Put your code here
 	}
 }
