@@ -14,11 +14,11 @@ public class Reverse {
 		System.out.println(" ");
 		int x = name.length();		 // chek the num of the muddle char
 		if (name.length() % 2 == 1 ){
-			System.out.println("The middle character is" + name.charAt(x/2));		 // print the middle char
+			System.out.println("The middle character is " + name.charAt(x/2));		 // print the middle char
 
 		}
 		else{
-			System.out.print("The middle character is" + name.charAt((x/2)+1));
+			System.out.print("The middle character is " + name.charAt((x/2)+1));
 			System.out.println(name.charAt(x/2));
 		}
 
