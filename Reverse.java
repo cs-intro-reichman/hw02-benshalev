@@ -9,11 +9,18 @@ public class Reverse {
 		for (int i=0; i < name.length(); i++){  // loop that run according the num of charachters
 			char ch = name.charAt(strl);
 			System.out.print(ch); // print the last cha
-			strl = strl - 1; // minus to knoow what is the next one
+			strl = strl- 1; // minus to knoow what is the next one
 		}
 		System.out.println(" ");
-		int x = ((name.length()) / 2); // chek the num of the muddle char
-		System.out.println(name.charAt(x)); // print the middle char
+		int x = name.length();		 // chek the num of the muddle char
+		if (name.length() % 2 == 1 ){
+			System.out.println(name.charAt(x/2));		 // print the middle char
+
+		}
+		else{
+			System.out.print(name.charAt((x/2)+1));
+			System.out.println(name.charAt(x/2));
+		}
 
 		//// Put your code here
 	}
