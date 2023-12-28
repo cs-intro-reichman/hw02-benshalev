@@ -7,7 +7,7 @@ public class OneOfEachStats {
 		//// Put your code here
 		int T = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
-		random generator = new Random(seed);
+		Random generator = new Random(seed);
 		int seckind;
 		int kindof;
 		boolean check = true;
