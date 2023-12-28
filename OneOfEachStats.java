@@ -6,6 +6,8 @@ public class OneOfEachStats {
 	public static void main (String[] args) {
 		//// Put your code here
 		int T = Integer.parseInt(args[0]);
+		int seed = Integer.parseInt(args[1]);
+		random generator = new Random(seed);
 		int seckind;
 		int kindof;
 		boolean check = true;
@@ -18,9 +20,9 @@ public class OneOfEachStats {
 		int onefam = 0;
 
 		for (int n = 0; n < T; n++){
-			double firstchild = (Math.random() * 10);
+			double firstchild = generator.nextDouble();
 			sum = 1;
-			if (firstchild < 5){
+			if (firstchild < 0.5){
 				kindof = 1;
 
 			}
@@ -29,8 +31,8 @@ public class OneOfEachStats {
 			}
 			while (check == true) {
 				sum = sum +1;
-				double secondechild = (Math.random() * 10);
-				if (secondechild < 5 ){
+				double secondechild = generator.nextDouble();
+				if (secondechild < 0.5 ){
 					seckind = 0 ;
 					if (kindof == seckind){
 						check = false;
