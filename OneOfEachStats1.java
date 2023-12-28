@@ -44,13 +44,13 @@ public class OneOfEachStats1 {
 				}
 			}
 			if (sum == 2){
-				x ++;
+				x = x + 1;
 			}
-			if(sum == 3){ 
-				y ++;
+			else if(sum == 3){ 
+				y = y + 1;
 			}
 			else{
-				z ++;
+				z = z + 1;
 			}
 			check = true;
 			sumTotal += sum;
@@ -60,7 +60,18 @@ public class OneOfEachStats1 {
 		System.out.println("Number of families with 2 children: "+ x);
 		System.out.println("Number of families with 3 children: "+ y);
 		System.out.println("Number of families with 4 or more children: "+ z);
-		System.out.println("The most common number of children is " +  ((Math.max(z, (Math.max(x,y))) > 3) ? "4 or more." : Math.max(x,y) + "."));
+		if (Math.max(z, (Math.max(x,y))) == x ){
+			System.out.println("The most common number of children is 2." );
+
+		}
+		else if (Math.max(z, (Math.max(x,y))) == y ){
+			System.out.println("The most common number of children is 3." );
+
+		}
+		else if (Math.max(z, (Math.max(x,y))) == z ){
+			System.out.println("The most common number of children is 4 or more." );
+
+		}
 
 		
 	}
