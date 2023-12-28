@@ -56,11 +56,11 @@ public class OneOfEachStats1 {
 			sumTotal += sum;
 		}
 		Average = (double) sumTotal / T ; 
-		System.out.println("Average:"  + Average + " children to get at least one of each gender.");
+		System.out.println("Average: "  + Average + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: "+ x);
 		System.out.println("Number of families with 3 children: "+ y);
 		System.out.println("Number of families with 4 or more children: "+ z);
-		System.out.println("The most common number of children is " +  ((Math.max(z, (Math.max(x,y))) > 3) ? " 4 or more." : Math.max(x,y) + "."));
+		System.out.println("The most common number of children is " +  ((Math.max(z, (Math.max(x,y))) > 3) ? "4 or more." : Math.max(x,y) + "."));
 
 		
 	}
