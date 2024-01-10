@@ -1,3 +1,8 @@
+/*
+#feedback
+good work!
+*/
+
 /**
  *  Gets a command-line argument (int), and chekcs if the given number is perfect.
  */
