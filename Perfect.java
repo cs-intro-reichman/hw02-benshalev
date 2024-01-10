@@ -1,3 +1,8 @@
+/*
+#feedback
+1. try to keep the consistency of the indentations so it would be easier for you debugging the code.
+*/
+
 /**
  *  Gets a command-line argument (int), and chekcs if the given number is perfect.
  */
